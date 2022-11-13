@@ -18,13 +18,13 @@ using namespace std;
 // Datenbank-Login/Logout
 // ----------------------
 
-
 // Datenbank-Login
 // rc: 0 = ok, -1 = error
 int db_login(const string &user, const string &password, const string &host, const string &port, const string &dbname);
 
 // Datenbank-Logout
 void db_logout();
+int db_flush();
 
 // -------------------
 // Transaktionsbefehle
@@ -98,6 +98,5 @@ int db_delete_hersteller(const string &hnr);
 // Loeschen des kompletten Tabelleninhalts beider Tabellen
 // rc: 0 = ok, -1 = error
 int db_delete();
-
 
 #endif
